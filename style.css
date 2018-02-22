@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=cyrillic,cyrillic-ext,vietnamese');
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.conteiner {
+    margin: 0 auto;
+    background-color: #eee;
+    width: 1200px;
+    min-width: 600px;
+}
+.header {
+    height: 100px;
+    background-color: aliceblue;
+    line-height: 100px;
+    
+}
+.footer {
+    background-color: #999;
+    text-align: right;
+    padding: 30px;
+}
+.menu {
+    display: inline-block;
+    margin: 0px;
+} 
+.menu a {
+    text-decoration: none;
+    color: #444;
+    padding-bottom: 10px;
+
+}
+.menu a:hover {
+    border-bottom: 2px solid grey;
+    color: #008B8B;
+}
+.menu li {
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+.content {
+    padding: 20px;
+    min-height: 600px;
+}

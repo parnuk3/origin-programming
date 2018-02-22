@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Загадки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="conteiner">
+       <div class="header">
+           <ul class="menu">
+               <li><a href="index.html">Главная</a></li>
+               <li><a href="converter.html">Конвертер</a></li>
+               <li><a href="#">Загадки</a></li>
+               <li><a href="#">Логические задачи</a></li>
+               <li><a href="#">Калькулятор вклада</a></li>
+           </ul>
+       </div>
+       <div class="content">
+           <p>Вам будут предложены 3 загадки, необходимо набрать максимальное кол-во баллов</p>
+           <input type="submit" value="Начать!" name='start' OnClick="converter();">
+           <script>
+                function converter() {
+                    var result = 0;
+                    var UserAnswer = (prompt("Зимой и летом одним цветом. Ваш ответ: ")).toLowerCase();
+                    var UserResult = document.getElementById('res');
+                    if (UserAnswer == "ель" || UserAnswer == "ёлка" || UserAnswer == "елка" || UserAnswer == "елочка") {
+                        alert("Вы ответили верно и заработали 1 балл :)");
+                        result ++;
+                    }
+                    else {
+                        alert("Правильный ответ Елка. Не расстраивайтесь, у Вас все получится")
+                    }
+                    UserAnswer = (prompt("Без окон, без дверей, полна горница людей. Ваш ответ: ")).toLowerCase();
+                    if (UserAnswer == "огурец" || UserAnswer == "огурчик" || UserAnswer == "огуречек") {
+                        alert("Вы ответили верно и заработали 1 балл :)");
+                        result ++;
+                    }
+                    else {
+                        alert("Правильный ответ Огурец. Не расстраивайтесь, у Вас все получится");
+                    }
+                    UserAnswer = (prompt("Сто одежек, и все без застежек. Ваш ответ: ")).toLowerCase();
+                    if (UserAnswer == "лук" || UserAnswer == "луковица" || UserAnswer == "лучок") {
+                        alert("Вы ответили верно и заработали 1 балл :)");
+                        result ++;
+                    }
+                    else {
+                        alert("Правильный ответ Лук. Не расстраивайтесь, у Вас все получится");
+                    }
+                    var result1 = "Ваш результат " + String(result) + " из 3";
+                    
+                    document.getElementById('res').innerHTML = result1;
+                }
+                
+
+            </script>
+            <div id='res'></div>
+       </div>
+       <div class="footer">
+           Copyright &copy; 2018
+       </div>
+   </div>
+    
+</body>
+</html>
