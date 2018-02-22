@@ -2,15 +2,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
+    <title>Конвертер валют</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <div class="conteiner">
        <div class="header">
            <ul class="menu">
-               <li><a href="#">Главная</a></li>
-               <li><a href="converter.html">Конвертер</a></li>
+               <li><a href="index.html">Главная</a></li>
+               <li><a id="converter" href="#">Конвертер</a></li>
                <li><a href="enigma.html">Загадки</a></li>
                <li><a href="#">Логические задачи</a></li>
                <li><a href="#">Калькулятор вклада</a></li>
@@ -31,12 +31,15 @@
                 
                 var count = document.getElementById('rub').value;
                 if (isNaN(count)){
-                    alert("Введите число");
+                    result = "Введите число";
+                    document.getElementById('dollars').innerHTML = result;
                 }
+               else {
                 result = "Сумма в USD: " + (count / usd).toFixed(2);
                 document.getElementById('dollars').innerHTML = result;
                 result = "Сумма в EUR: " + (count / eur).toFixed(2);
                 document.getElementById('euro').innerHTML = result;
+               }
            }
            document.getElementById('res1').addEventListener('click', convertation)
         </script>

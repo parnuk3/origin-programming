@@ -6,8 +6,8 @@ body {
 .conteiner {
     margin: 0 auto;
     background-color: #eee;
-    width: 1200px;
-    min-width: 600px;
+    max-width: 1200px;
+    min-width: 200px;
 }
 .header {
     height: 100px;
@@ -34,6 +34,7 @@ body {
     border-bottom: 2px solid grey;
     color: #008B8B;
 }
+
 .menu li {
     list-style-type: none;
     float: left;
@@ -45,4 +46,9 @@ body {
 .content {
     padding: 20px;
     min-height: 600px;
+}
+#index,
+#converter,
+#enigma{
+   color: #008B8B; 
 }
